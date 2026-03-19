@@ -1,16 +1,87 @@
-# React + Vite
+# Peanut
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Peanut est une plateforme de streaming fictive réalisée dans le cadre d’un projet personnel pour ma recherche d’alternance.
 
-Currently, two official plugins are available:
+L’objectif du projet est de concevoir une interface moderne et cohérente à partir d’une maquette Figma, en développant le frontend avec **React.js** et **Tailwind CSS**. Le backend n’est pas implémenté dans cette version ; l’architecture a simplement été pensée pour une future intégration en **Python**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Aperçu du projet
 
-## React Compiler
+Peanut propose une expérience utilisateur inspirée des plateformes de streaming, avec :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- une page d’accueil
+- un parcours d’authentification
+- un parcours d’abonnement
+- des catalogues de contenus
+- des pages détail pour les séries, films, collections et lives
+- des pages informatives et légales
+- une page administrateur
 
-## Expanding the ESLint configuration
+## Technologies utilisées
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js**
+- **Vite**
+- **Tailwind CSS**
+- **React Router DOM**
+
+## Fonctionnalités développées
+
+### Authentification
+- Se connecter
+- Mot de passe oublié
+- S’inscrire — pictogramme
+- S’inscrire — formulaire
+
+### Abonnement
+- Sélectionner une offre
+- Ajouter un mode de paiement
+
+### Navigation principale
+- Page d’accueil
+- Catalogue Séries
+- Catalogue Films
+- Catalogue Collections
+- Catalogue Lives
+
+### Pages détail
+- Page Série
+- Page Film
+- Page Collection
+- Page Live
+
+### Pages informatives
+- FAQ
+- Nous contacter
+- Politique de confidentialité
+- Conditions d’abonnement
+- Politique de confidentialité relative aux enfants
+- Gérer les cookies
+- Mentions légales
+
+### Administration
+- Page administrateur
+
+## Structure du projet
+
+```bash
+src/
+  components/
+    auth/
+    catalog/
+    common/
+    layout/
+    media/
+  pages/
+    admin/
+    auth/
+    catalog/
+    info/
+    media/
+    subscription/
+  App.jsx
+  main.jsx
+  index.css
+
+public/
+  images/
+    logos/
+    catalog/
